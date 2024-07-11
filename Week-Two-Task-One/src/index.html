@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="py-6">
+      <nav class="container flex items-center justify-between">
+        <img src="./images/Logo.png" alt="logo" class="h-8 lg:h-10" />
+        <ul class="hidden lg:flex items-center gap-4" id="menuLinks">
+          <li class="text-black font-medium p-4">
+            <a href="#home">Home</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#services">Services</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#newsletter">Contact</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#progress">Support</a>
+          </li>
+        </ul>
+
+        <div>
+          <button
+            class="hidden lg:block bg-black py-3 px-10 text-white rounded-md"
+          >
+            Sign Up
+          </button>
+          <!-- <img
+            src="./images/menu.png"
+            alt="menuIcon"
+            id="menuButton"
+            class="menu-icon lg:hidden size-8"
+          /> -->
+          <div class="lg:hidden space-y-2" id="menuButton">
+            <span
+              class="block w-10 h-1 bg-black transition duration-500"
+              id="firstSpan"
+            ></span>
+            <span
+              class="block w-10 h-1 bg-black transition duration-500 origin-bottom-left"
+              id="secondSpan"
+            ></span>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="absolute transition duration-500 top-20 w-full h-[60vh] pb-10 z-50 bg-white/10 backdrop-blur-md -translate-y-[800px] shadow-sm"
+        id="mobNav"
+      >
+        <ul class="flex flex-col items-center gap-4">
+          <li class="text-black font-medium p-4">
+            <a href="#home">Home</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#services">Services</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#newsletter">Contact</a>
+          </li>
+          <li class="text-grayHeader font-medium p-4">
+            <a href="#progress">Support</a>
+          </li>
+          <button class="bg-black py-3 px-10 text-white rounded-md">
+            Sign Up
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="landing py-10 md:py-20" id="home">
+        <div class="relative container flex flex-col">
+          <div>
+            <h1 class="text-4xl md:text-7xl lg:text-9xl font-semibold">
+              Interior Design
+            </h1>
+            <p class="text-grayHeader max-w-[500px] font-xl leading-7 my-8">
+              Step into a world where the art of Interior Design is meticulously
+              crafted to bring together timeless elegance and cutting-edge
+              modern Innovation, Allowing you to transform your living spaces
+              into the epitome of luxury and sophistication
+            </p>
+            <button class="bg-black px-10 py-3 text-white rounded-md">
+              Start Project
+            </button>
+            <div
+              class="counter-container flex items-center gap-2 md:gap-10 text-grayHeader mt-10 md:mt-20"
+            >
+              <div class="counter-item text-center">
+                <span class="counter-number text-2xl md:text-6xl">400+</span>
+                <p class="counter-label text-sm md:text-xl">Project Complete</p>
+              </div>
+              <div class="counter-item text-center">
+                <span class="counter-number text-2xl md:text-6xl">600+</span>
+                <p class="counter-label text-sm md:text-xl">
+                  Satisfied Clients
+                </p>
+              </div>
+              <div class="counter-item text-center">
+                <span class="counter-number text-2xl md:text-6xl">100+</span>
+                <p class="counter-label text-sm md:text-xl">Unique Styles</p>
+              </div>
+            </div>
+          </div>
+          <div class="xl:absolute lg:-top-4 lg:right-9 mt-10 xl:mt-0">
+            <img
+              src="./images/Image 1.png"
+              alt="decorImage"
+              class="h-[250px] w-[350px] ml-auto"
+            />
+            <div class="relative">
+              <img
+                src="./images/Image 2.png"
+                alt="decorImage"
+                class="h-[300px] mr-40 -lg:mr-40 xl:mr-40 mt-5"
+              />
+              <div
+                class="hidden md:block border-2 border-black rounded-md size-32 absolute -top-8 -left-8 -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services py-10 md:py-20" id="services">
+        <div class="container">
+          <div class="flex items-center gap-4 mb-14">
+            <span class="block h-[1px] w-16 bg-black"></span>
+            <h1 class="font-semibold text-4xl">Our Services</h1>
+          </div>
+          <div class="grid gap-10 justify-center md:grid-cols-2 lg:grid-cols-3">
+            <article class="flex gap-4">
+              <div class="size-[75px]">
+                <img src="./images/service1.png" alt="serviceImage" />
+              </div>
+              <div class="space-y-4">
+                <h3 class="font-semibold text-2xl">Lighting Design</h3>
+                <p class="text-grayHeader font-medium">
+                  Achieve the perfect balance of <br />
+                  ambient, task, and accent lighting <br />
+                  for a functional atmosphere
+                </p>
+              </div>
+            </article>
+            <article class="flex gap-4">
+              <div class="size-[75px]">
+                <img src="./images/service2.png" alt="serviceImage" />
+              </div>
+              <div class="space-y-4">
+                <h3 class="font-semibold text-2xl">Interior Design</h3>
+                <p class="text-[#545454] font-medium">
+                  From concept to completion, we <br />
+                  oversee every detail to bring your <br />
+                  vision to life efficiently
+                </p>
+              </div>
+            </article>
+            <article class="flex gap-4">
+              <div class="size-[75px]">
+                <img src="./images/service3.png" alt="serviceImage" />
+              </div>
+              <div class="space-y-4">
+                <h3 class="font-semibold text-2xl">Outdoor Design</h3>
+                <p class="text-[#545454] font-medium">
+                  Celebrate the changing seasons <br />
+                  with our seasonal outdoor decor <br />
+                  services
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 md:py-20">
+        <div class="container grid lg:grid-cols-2">
+          <img
+            src="./images/Mask group.png"
+            alt="furniture"
+            class="h-[420px] w-[600px] mx-auto object-contain mb-10 lg:mb-0"
+          />
+          <div>
+            <h1 class="text-2xl md:text-3xl lg:text4xl font-semibold">
+              Designing Your Dream <br />
+              With Brilliance
+            </h1>
+            <p class="text-xl md:text-2xl text-grayHeader my-10">
+              Elevate your spaces with bespoke interior designs that reflect
+              <br />
+              your unique style and aspirations, crafted with precision and
+              <br />
+              brilliance for an unforgettable living experience
+            </p>
+            <div class="lg:pr-20">
+              <div
+                class="flex items-center justify-between border-b border-grayHeader/50 p-6 pl-0"
+              >
+                <h3 class="font-semibold text-2xl">
+                  Living Room Interior Design
+                </h3>
+                <img src="./images/plus.png" alt="plus" class="size-8" />
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-grayHeader/50 p-6 pl-0"
+              >
+                <h3 class="font-semibold text-2xl">
+                  Commercial Office Room Interior Design
+                </h3>
+                <img src="./images/plus.png" alt="plus" class="size-8" />
+              </div>
+              <button
+                class="bg-black px-10 py-3 max-w-fit text-white mt-8 rounded-md"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="progress py-10 md:py-20" id="progress">
+        <div class="container grid lg:grid-cols-2 gap-10">
+          <div class="flex flex-col gap-10 items-center">
+            <h1
+              class="text-2xl md:text-5xl lg:text4xl font-semibold capitalize -ml-6"
+            >
+              Designing Your Dream in <br />
+              Three Simple Steps
+            </h1>
+            <div class="space-y-6">
+              <div class="flex gap-10 items-center">
+                <div class="flex flex-col items-center gap-4">
+                  <span class="block size-14 bg-mainBlackColor p-4 rounded-full"
+                    ><img src="./images/rocketIcon.png" alt="rocketIcon"
+                  /></span>
+                  <span class="block h-20 w-[1px] bg-grayHeader/50"></span>
+                </div>
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-semibold">Start Project</h3>
+                  <p class="text-grayHeader max-w-[500px] lg:text-2xl">
+                    Embark on your design adventure by initiating your project.
+                    Share your vision and set the stage for a bespoke design
+                    experience
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-10 items-center">
+                <div class="flex flex-col items-center gap-4">
+                  <span class="block size-14 bg-mainBlackColor p-4 rounded-full"
+                    ><img src="./images/lightIcon.png" alt="rocketIcon"
+                  /></span>
+                  <span class="block h-20 w-[1px] bg-grayHeader/50"></span>
+                </div>
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-semibold">Craft</h3>
+                  <p class="text-grayHeader max-w-[500px] lg:text-2xl">
+                    Collaborate closely to achieve design excellence refining
+                    your vision and crafting brilliance into every aspect of
+                    your space
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-10">
+                <div>
+                  <span class="block size-14 bg-mainBlackColor p-4 rounded-full"
+                    ><img src="./images/rocketIcon.png" alt="rocketIcon"
+                  /></span>
+                </div>
+
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-semibold">Execute</h3>
+                  <p class="text-grayHeader max-w-[500px] lg:text-2xl">
+                    Witness your vision becoming a reality as we execute the
+                    design plan with precision. Celebrate the joy of your newly
+                    transformed space
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/Image.png"
+            alt="bedroomImage"
+            class="w-[500px] mx-auto lg:mt-52 xl:mt-4"
+          />
+        </div>
+      </section>
+
+      <div class="testamonials py-10 md:py-20">
+        <div class="relative container grid lg:grid-cols-2 gap-10 pb-10">
+          <div class="relative order-2 lg:order-2">
+            <img
+              src="./images/Mask group (1).png"
+              alt="room"
+              class="max-w-full max-lg:hidden"
+            />
+
+            <div
+              class="lg:absolute lg:top-[30%] lg:left-[35%] bg-white flex flex-col items-center md:flex-row gap-6"
+            >
+              <div
+                class="bg-mainBlackColor flex flex-col justify-around mx-auto p-6 lg:p-10 lg:py-20 gap-10 lg:min-w-[380px] lg:min-h-[380px] xl:min-w-[500px] xl:min-h-[530px] rounded-md"
+              >
+                <img
+                  src="./images/dots.png"
+                  alt="dots"
+                  class="size-6 lg:size-12"
+                />
+                <p class="max-w-[350px] text-white text-sm lg:text-base">
+                  Working with your design team was an absolute pleasure. The
+                  attention to detail and creativity exceeded my expectations.
+                  Thank you for making my home beautiful!
+                </p>
+                <div class="flex items-center gap-4">
+                  <img
+                    src="./images/avatar.png"
+                    alt="avatar"
+                    class="max-lg:size-10"
+                  />
+                  <div>
+                    <h3 class="max-lg:text-sm text-xl font-semibold text-white">
+                      James Bennett
+                    </h3>
+                    <p class="text-grayHeader max-lg:text-xs font-medium">
+                      New York, USA
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-mainBlackColor flex flex-col justify-around mx-auto p-6 lg:p-10 lg:py-20 gap-10 lg:min-w-[380px] lg:min-h-[380px] xl:min-w-[500px] xl:min-h-[530px] rounded-md"
+              >
+                <img
+                  src="./images/dots.png"
+                  alt="dots"
+                  class="size-6 lg:size-12"
+                />
+                <p class="max-w-[350px] text-white text-sm lg:text-base">
+                  Working with your design team was an absolute pleasure. The
+                  attention to detail and creativity exceeded my expectations.
+                  Thank you for making my home beautiful!
+                </p>
+                <div class="flex items-center gap-4">
+                  <img
+                    src="./images/avatar.png"
+                    alt="avatar"
+                    class="max-lg:size-10"
+                  />
+                  <div>
+                    <h3 class="max-lg:text-sm text-xl font-semibold text-white">
+                      James Bennett
+                    </h3>
+                    <p class="text-grayHeader max-lg:text-xs font-medium">
+                      New York, USA
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h1
+              class="text-2xl md:text-3xl lg:text-5xl font-semibold text-center"
+            >
+              What Our Customers <br />
+              Say About Us
+            </h1>
+          </div>
+          <div
+            class="absolute -bottom-14 left-1/2 -translate-x-1/2 lg:left-10 lg:-translate-x-0 flex gap-10"
+          >
+            <img
+              src="./images/arrowIcon.png"
+              alt="arrowImage"
+              class="rounded-md size-16 bg-gray-200/50 p-4 cursor-pointer"
+            />
+            <img
+              src="./images/arrowIcon.png"
+              alt="arrowImage"
+              class="rounded-md rotate-180 size-16 bg-gray-200/50 p-4 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section class="py-10 md:py-20" id="newsletter">
+        <div class="relative container">
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold"
+          >
+            Subscribe to Our Newsletter <br />
+            for Design Insights
+          </h1>
+          <p class="text-center text-xl lg:text-2xl mt-10 text-grayHeader">
+            Be the first to discover trends, inspirations, and special offers as
+            <br />
+            we bring the world of design directly to your inbox
+          </p>
+          <div
+            class="mx-auto border flex max-sm:flex-col items-center shadow-md mt-10 md:mt-0 md:absolute bg-white md:-bottom-[120px] md:left-1/2 md:-translate-x-1/2 p-2 rounded-md md:w-3/4 lg:w-1/2"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="p-4 w-full outline-none placeholder-grayHeader"
+            />
+            <button
+              class="bg-black px-12 py-4 text-white rounded-md max-sm:w-full"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-mainBlackColor py-10 md:py-32">
+      <div
+        class="container grid gap-10 sm:grid-cols-2 sm:gap-20 lg:grid-cols-4 lg:gap-10"
+      >
+        <div class="footer-first-col space-y-10">
+          <img src="./images/logowhite.png" alt="logo" class="h-20 -mt-6" />
+          <p class="text-grayTextColor text-xl max-w-[300px]">
+            VivaDecor your premier destination for luxury and modern interior
+            design
+          </p>
+          <ul class="flex items-center gap-4">
+            <li class="bg-white/10 rounded-lg size-10">
+              <img
+                class="w-full"
+                src="./images/facebookicon.png"
+                alt="facebookicon"
+              />
+            </li>
+            <li class="bg-white/10 rounded-lg size-10">
+              <img
+                class="w-full"
+                src="./images/twittericon.png"
+                alt="twittericon"
+              />
+            </li>
+            <li class="bg-white/10 rounded-lg size-10">
+              <img
+                class="w-full"
+                src="./images/instagramicon.png"
+                alt="instagramicon"
+              />
+            </li>
+            <li class="bg-white/10 rounded-lg size-10">
+              <img
+                class="w-full"
+                src="./images/linkedinicon.png"
+                alt="linkedinicon"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer-second-col space-y-10">
+          <ul class="h-full space-y-8">
+            <li class="font-semibold text-white text-xl">Our Services</li>
+            <li class="text-grayTextColor">Interior design</li>
+            <li class="text-grayTextColor">Outdoor design</li>
+            <li class="text-grayTextColor">Lightning design</li>
+            <li class="text-grayTextColor">Office design</li>
+          </ul>
+        </div>
+        <div class="footer-third-col space-y-10">
+          <ul class="h-full space-y-8">
+            <li class="font-semibold text-white text-xl">Our Services</li>
+            <li class="text-grayTextColor">Reviews</li>
+            <li class="text-grayTextColor">Careers</li>
+            <li class="text-grayTextColor">pricing</li>
+            <li class="text-grayTextColor">Press inquires</li>
+          </ul>
+        </div>
+        <div class="footer-forth-col space-y-10">
+          <ul class="h-full space-y-8">
+            <li class="font-semibold text-white text-xl">Our Services</li>
+            <li class="text-grayTextColor font-medium">info@vivadecor.com</li>
+            <li class="text-grayTextColor max-w-[190px] font-medium">
+              Design Avenue Cityville, CA 90210 United States
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="fixed bottom-8 md:bottom-12 right-8 md:right-12 size-12 md:size-16 p-4 bg-black text-white rounded-md cursor-pointer transition rotate-[180deg]"
+      id="toTopButton"
+    >
+      <img
+        src="./images/arrow-top-svgrepo-com (2).svg"
+        alt="arrowIcon"
+        class="w-full text-white"
+      />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

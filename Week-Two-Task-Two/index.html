@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display-container">
+            <input id="monitor" type="text" name="display" class="display1" readonly>
+        </div>
+        <div class="button-container">
+            <div><button class="fn" onclick="clearAll()">AC</button></div>
+            <div><button class="fn" onclick="clearOne()">DE</button></div>
+            <div><button class="fn" onclick="preview()">PREV</button></div>
+            <div><button class="operator" onclick="squareRootFn()">√</button></div>
+            <div><button class="operator" onclick="squareFn()">x<sup>2</sup></button></div>
+            <div><button class="operator" onclick="handleClick('br-1')">(</button></div>
+            <div><button class="operator" onclick="handleClick('br-2')">)</button></div>
+            <div><button class="operator" onclick="handleClick('/')">/</button></div>
+            <div><button onclick="handleClick('7')">7</button></div>
+            <div><button onclick="handleClick('8')">8</button></div>
+            <div><button onclick="handleClick('9')">9</button></div>
+            <div><button class="operator" onclick="handleClick('*')">*</button></div>
+            <div><button onclick="handleClick('4')">4</button></div>
+            <div><button onclick="handleClick('5')">5</button></div>
+            <div><button onclick="handleClick('6')">6</button></div>
+            <div><button class="operator" onclick="handleClick('-')">-</button></div>
+            <div><button onclick="handleClick('1')">1</button></div>
+            <div><button onclick="handleClick('2')">2</button></div>
+            <div><button onclick="handleClick('3')">3</button></div>
+            <div><button class="operator" onclick="handleClick('+')">+</button></div>
+            <div><button onclick="handleClick('00')">00</button></div>
+            <div><button onclick="handleClick('0')">0</button></div>
+            <div><button onclick="handleClick('.')">.</button></div>
+            <div class="equal"><button class="eq" onclick="calculateFn()">=</button></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
